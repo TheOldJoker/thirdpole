@@ -1,0 +1,9 @@
+use_frameworks!
+target 'tengwangge' do
+pod 'MBProgressHUD'
+pod 'YYCache'
+pod 'MJRefresh'
+pod 'IQKeyboardManager'
+pod 'YHCategroy'
+pod 'YHModaTransitonHelper'
+end
