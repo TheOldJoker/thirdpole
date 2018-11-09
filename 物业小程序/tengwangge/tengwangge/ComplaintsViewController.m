@@ -41,6 +41,9 @@
     }
     [self.mainTableView reloadData];
 }
+- (IBAction)callAction:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",@"02885636621"]]];
+}
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

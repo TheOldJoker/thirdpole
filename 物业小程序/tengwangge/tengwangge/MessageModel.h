@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MessageModel : NSObject
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *content;
+@property (nonatomic, assign) BOOL read;
 @end
 
 NS_ASSUME_NONNULL_END

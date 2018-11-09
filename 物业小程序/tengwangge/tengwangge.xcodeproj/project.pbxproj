@@ -18,6 +18,11 @@
 		AF44253B216EED9000A7EFBB /* YHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44253A216EED9000A7EFBB /* YHBaseNavigationController.m */; };
 		AF44253E216EEF2500A7EFBB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44253D216EEF2500A7EFBB /* MainViewController.m */; };
 		AF442544216F21C900A7EFBB /* MainViewActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AF442543216F21C900A7EFBB /* MainViewActionButton.m */; };
+		AF776688217082AB00CAB5DE /* PayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AF776687217082AB00CAB5DE /* PayModel.m */; };
+		AF77668C2170834E00CAB5DE /* PayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF77668A2170834E00CAB5DE /* PayTableViewCell.m */; };
+		AF77668D2170834E00CAB5DE /* PayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF77668B2170834E00CAB5DE /* PayTableViewCell.xib */; };
+		AF77669121709BF700CAB5DE /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF77668F21709BF700CAB5DE /* MessageTableViewCell.m */; };
+		AF77669221709BF700CAB5DE /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF77669021709BF700CAB5DE /* MessageTableViewCell.xib */; };
 		AFFBF026216F381200A32F57 /* ComplaintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFBF025216F381200A32F57 /* ComplaintsViewController.m */; };
 		AFFBF029216F3A9500A32F57 /* UIViewController+YHViewControllerBaseCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFBF028216F3A9500A32F57 /* UIViewController+YHViewControllerBaseCategory.m */; };
 		AFFBF02C216F3D6200A32F57 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFBF02B216F3D6200A32F57 /* PayViewController.m */; };
@@ -70,6 +75,14 @@
 		AF44253D216EEF2500A7EFBB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		AF442542216F21C900A7EFBB /* MainViewActionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewActionButton.h; sourceTree = "<group>"; };
 		AF442543216F21C900A7EFBB /* MainViewActionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewActionButton.m; sourceTree = "<group>"; };
+		AF776686217082AB00CAB5DE /* PayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayModel.h; sourceTree = "<group>"; };
+		AF776687217082AB00CAB5DE /* PayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayModel.m; sourceTree = "<group>"; };
+		AF7766892170834E00CAB5DE /* PayTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayTableViewCell.h; sourceTree = "<group>"; };
+		AF77668A2170834E00CAB5DE /* PayTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayTableViewCell.m; sourceTree = "<group>"; };
+		AF77668B2170834E00CAB5DE /* PayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayTableViewCell.xib; sourceTree = "<group>"; };
+		AF77668E21709BF700CAB5DE /* MessageTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		AF77668F21709BF700CAB5DE /* MessageTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		AF77669021709BF700CAB5DE /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		AFFBF024216F381200A32F57 /* ComplaintsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplaintsViewController.h; sourceTree = "<group>"; };
 		AFFBF025216F381200A32F57 /* ComplaintsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplaintsViewController.m; sourceTree = "<group>"; };
 		AFFBF027216F3A9500A32F57 /* UIViewController+YHViewControllerBaseCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YHViewControllerBaseCategory.h"; sourceTree = "<group>"; };
@@ -166,10 +179,18 @@
 				AFFBF031216F43BD00A32F57 /* MessageModel.m */,
 				AFFBF02D216F3DE300A32F57 /* MessageViewController.h */,
 				AFFBF02E216F3DE300A32F57 /* MessageViewController.m */,
+				AF77668E21709BF700CAB5DE /* MessageTableViewCell.h */,
+				AF77668F21709BF700CAB5DE /* MessageTableViewCell.m */,
+				AF77669021709BF700CAB5DE /* MessageTableViewCell.xib */,
 				AFFBF033216F46C800A32F57 /* MessageInfoViewController.h */,
 				AFFBF034216F46C800A32F57 /* MessageInfoViewController.m */,
 				AFFBF02A216F3D6200A32F57 /* PayViewController.h */,
 				AFFBF02B216F3D6200A32F57 /* PayViewController.m */,
+				AF7766892170834E00CAB5DE /* PayTableViewCell.h */,
+				AF77668A2170834E00CAB5DE /* PayTableViewCell.m */,
+				AF77668B2170834E00CAB5DE /* PayTableViewCell.xib */,
+				AF776686217082AB00CAB5DE /* PayModel.h */,
+				AF776687217082AB00CAB5DE /* PayModel.m */,
 				AFFBF024216F381200A32F57 /* ComplaintsViewController.h */,
 				AFFBF025216F381200A32F57 /* ComplaintsViewController.m */,
 				AFFBF03E216F588500A32F57 /* ComplaintsPutViewController.h */,
@@ -320,9 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFBF03D216F4E7500A32F57 /* ComplainTableViewCell.xib in Resources */,
+				AF77669221709BF700CAB5DE /* MessageTableViewCell.xib in Resources */,
 				AF442514216EE2B800A7EFBB /* LaunchScreen.storyboard in Resources */,
 				AF442511216EE2B800A7EFBB /* Assets.xcassets in Resources */,
 				AF44250F216EE2B600A7EFBB /* Main.storyboard in Resources */,
+				AF77668D2170834E00CAB5DE /* PayTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +427,10 @@
 				AFFBF026216F381200A32F57 /* ComplaintsViewController.m in Sources */,
 				AF44253B216EED9000A7EFBB /* YHBaseNavigationController.m in Sources */,
 				AFFBF02F216F3DE300A32F57 /* MessageViewController.m in Sources */,
+				AF776688217082AB00CAB5DE /* PayModel.m in Sources */,
+				AF77669121709BF700CAB5DE /* MessageTableViewCell.m in Sources */,
 				AFFBF038216F4D2800A32F57 /* ComplaintsModel.m in Sources */,
+				AF77668C2170834E00CAB5DE /* PayTableViewCell.m in Sources */,
 				AFFBF035216F46C800A32F57 /* MessageInfoViewController.m in Sources */,
 				AFFBF032216F43BD00A32F57 /* MessageModel.m in Sources */,
 				AFFBF03C216F4E7500A32F57 /* ComplainTableViewCell.m in Sources */,
@@ -584,6 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH25XMTWX7;
 				INFOPLIST_FILE = tengwangge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH25XMTWX7;
 				INFOPLIST_FILE = tengwangge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

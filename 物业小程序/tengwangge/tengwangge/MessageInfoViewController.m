@@ -25,7 +25,7 @@
 }
 - (UILabel *)contentLabel{
     if (!_contentLabel) {
-        _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 74, self.view.width, 0)];
+        _contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 84, self.view.width - 40, 0)];
         [_contentLabel configWithTextColor:[UIColor blackColor] font:[UIFont systemFontOfSize:22.f] textAlignment:(NSTextAlignmentJustified) backgroundColor:nil];
         _contentLabel.numberOfLines = 0;
         [self.view addSubview:_contentLabel];

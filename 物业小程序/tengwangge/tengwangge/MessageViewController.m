@@ -11,6 +11,7 @@
 #import "YHBaseCategroy.h"
 #import "MessageModel.h"
 #import "MessageInfoViewController.h"
+#import "MessageTableViewCell.h"
 @interface MessageViewController ()
 @property (strong, nonatomic) IBOutlet UITableView *mainTableView;
 @property (strong, nonatomic) NSMutableArray *dataArray;
@@ -54,15 +55,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MES_CELL"];
+    MessageTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MES_CELL"];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"MES_CELL"];
+        cell = [[NSBundle mainBundle] loadNibNamed:@"MessageTableViewCell" owner:self options:nil].firstObject;
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.clipsToBounds = YES;
     MessageModel * message = self.dataArray[indexPath.row];
-    cell.textLabel.text = message.title;
-    cell.detailTextLabel.text = message.content;
+    cell.model = message;
     return cell;
 }
 #pragma mark - UITableViewDelegate
@@ -71,6 +71,8 @@
     MessageModel * message = self.dataArray[indexPath.row];
     MessageInfoViewController * info = [[MessageInfoViewController alloc] init];
     info.message = message;
+    message.read = YES;
+    [tableView reloadData];
     [self.navigationController pushViewController:info animated:YES];
 }
 

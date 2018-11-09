@@ -28,6 +28,7 @@
         self.contentLabel.text = [NSString stringWithFormat:@"%.1f元/次",model.price];
     }
     self.selectButton.selected = model.selected;
+    
 }
 - (void)awakeFromNib {
     [super awakeFromNib];
